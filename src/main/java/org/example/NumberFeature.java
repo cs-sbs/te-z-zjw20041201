@@ -13,5 +13,20 @@ public class NumberFeature {
         result = inputNumber;
 
         System.out.println(result);
+        public static void digital_eigenvalue(int inputNumber, int result) {
+            int number;
+            int digit_position = 1;
+            int binary_bit_value = 1;
+            while (inputNumber > 0) {
+                number = inputNumber % 10;
+                inputNumber = inputNumber / 10;
+                if (number % 2 == digit_position % 2)
+                    result += binary_bit_value;
+                binary_bit_value *= 2;
+                digit_position++;
+            }
+            System.out.println(result);
+        }
+
     }
 }
