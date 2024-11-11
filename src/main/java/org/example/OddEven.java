@@ -21,5 +21,6 @@ public class OddEven {
         }while(number != -1); // 理解do while和while循环的区别
         System.out.print(countOdd+" ");
         System.out.println(countEven);
+        System.out.println();
     }
 }
